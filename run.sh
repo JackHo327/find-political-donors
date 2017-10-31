@@ -6,20 +6,24 @@
 
 # go to src directory
 cd src;
+
+# compile the java files, make sure you are using java 8
 javac *.java;
 java FindDonors;
 
 cd ..;
 # print part of output
-echo "-------------------------";
+echo "+++++++++++++++++++++++++";
 # 10 rows of cal_by_zip
 echo "medianvals_by_zip.txt";
+echo "-------------------------";
 cat output/medianvals_by_zip.txt | head -10;
 
 echo "-------------------------";
 
 # 10 rows of cal_by_date
 echo "medianvals_by_date.txt";
+echo "-------------------------";
 cat output/medianvals_by_date.txt | head -10;
 
-echo "-------------------------";
+echo "+++++++++++++++++++++++++";
