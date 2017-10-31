@@ -5,6 +5,13 @@ I tried to finished this project/challenge to apply the position of Data Enginee
 
 Wish me good luck :rocket::rocket:
 
+To test the program:
+
+1. directly download the project to you pc.
+1. put the corresponding testing files in the /input file.
+1. run `source run.sh`, if you are on the linux platform
+1. or, you should go to the /src file and run `java FindDonors` (you could also try to compile the FindDonors.java first)
+
 ```
 # Table of Contents
 1. [Introduction](README.md#introduction)
