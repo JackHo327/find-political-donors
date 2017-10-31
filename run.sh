@@ -4,3 +4,22 @@
 #
 #python ./src/find_political_donors.py ./input/itcont.txt ./output/medianvals_by_zip.txt ./output/medianvals_by_date.txt
 
+# go to src directory
+cd src;
+javac *.java;
+java FindDonors;
+
+cd ..;
+# print part of output
+echo "-------------------------";
+# 10 rows of cal_by_zip
+echo "medianvals_by_zip.txt";
+cat output/medianvals_by_zip.txt | head -10;
+
+echo "-------------------------";
+
+# 10 rows of cal_by_date
+echo "medianvals_by_date.txt";
+cat output/medianvals_by_date.txt | head -10;
+
+echo "-------------------------";
