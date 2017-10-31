@@ -9,7 +9,7 @@ cd src;
 
 # compile the java files, make sure you are using java 8
 javac *.java;
-java FindDonors;
+java FindDonors ./input/itcont.txt ./output/medianvals_by_zip.txt ./output/medianvals_by_date.txt;
 
 cd ..;
 # print part of output

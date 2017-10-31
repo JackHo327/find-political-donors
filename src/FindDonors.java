@@ -28,11 +28,21 @@ import java.util.regex.Pattern;
 public class FindDonors {
 
 	public static void main(String[] args) {
-		// generate the output of "medianvals_by_zip.txt"
-		genOutput("../input/itcont.txt", "../output/medianvals_by_zip.txt", "zip");
 
-		// generate the output of "medianvals_by_date.txt"
-		genOutput("../input/itcont.txt", "../output/medianvals_by_date.txt", "date");
+		//./input/itcont.txt ./output/medianvals_by_zip.txt ./output/medianvals_by_date.txt
+		if (args.length == 3) {
+			// generate the output of "medianvals_by_zip.txt"
+			genOutput("." + args[0], "." + args[1], "zip");
+
+			// generate the output of "medianvals_by_date.txt"
+			genOutput("." + args[0], "." + args[2], "date");
+		}
+
+		// // generate the output of "medianvals_by_zip.txt"
+		// genOutput("../input/itcont.txt", "../output/medianvals_by_zip.txt", "zip");
+
+		// // generate the output of "medianvals_by_date.txt"
+		// genOutput("../input/itcont.txt", "../output/medianvals_by_date.txt", "date");
 
 	}
 
